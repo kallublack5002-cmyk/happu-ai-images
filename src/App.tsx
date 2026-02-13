@@ -34,11 +34,10 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-transparent text-zinc-100">
-      <Navbar 
-        isDarkMode={true} 
-        toggleTheme={() => {}} 
-      />
+  <div style={{color:"white", padding:"40px"}}>
+    APP STARTED SUCCESSFULLY
+  </div>
+);
       
       <main className="flex-grow container mx-auto px-6 max-w-6xl pt-24 pb-32">
         {/* Balanced Hero Section */}
