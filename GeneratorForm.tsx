@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { GenerationConfig, AspectRatio, ImageStyle } from '../types';
-import { ASPECT_RATIOS, IMAGE_STYLES } from '../constants.tsx';
+import { ASPECT_RATIOS, IMAGE_STYLES } from '../constants';
 
 interface GeneratorFormProps {
   onGenerate: (config: GenerationConfig) => void;
