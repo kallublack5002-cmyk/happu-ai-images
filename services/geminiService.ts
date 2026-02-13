@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { GenerationConfig, GeneratedImage } from "../types";
 import { STYLE_PROMPTS } from "../constants.tsx";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY || '' });
 
 export const generateAIImage = async (config: GenerationConfig): Promise<GeneratedImage> => {
   const { prompt, style, aspectRatio } = config;
