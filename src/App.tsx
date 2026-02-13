@@ -1,11 +1,12 @@
 
+import React, { useState, useEffect } from "react";
+
 import Navbar from "./Navbar";
 import GeneratorForm from "./GeneratorForm";
 import ImageGallery from "./ImageGallery";
 import Footer from "./Footer";
-import { GeneratedImage, GenerationConfig } from './types';
-import { generateAIImage } from './services/geminiService';
-
+import { GeneratedImage, GenerationConfig } from "./types";
+import { generateAIImage } from "./services/geminiService";
 const App: React.FC = () => {
   const [images, setImages] = useState<GeneratedImage[]>([]);
   const [isGenerating, setIsGenerating] = useState(false);
