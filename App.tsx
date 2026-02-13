@@ -1,9 +1,8 @@
 
-import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import GeneratorForm from './components/GeneratorForm';
-import ImageGallery from './components/ImageGallery';
-import Footer from './components/Footer';
+import Navbar from "./Navbar";
+import GeneratorForm from "./GeneratorForm";
+import ImageGallery from "./ImageGallery";
+import Footer from "./Footer";
 import { GeneratedImage, GenerationConfig } from './types';
 import { generateAIImage } from './services/geminiService';
 
